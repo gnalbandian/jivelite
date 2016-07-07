@@ -1,0 +1,20 @@
+[Unit]
+Description=Starts and stops the Jivelite
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+GuessMainPID=yes
+User=pi
+ExecStart=/home/pi/startJivelite.sh
+Restart=on-failure
+WorkingDirectory=/home/pi
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl enable jivelite
+sudo systemctl start jivelite
+sudo systemctl status jivelite
