@@ -13,8 +13,3 @@ WorkingDirectory=/home/pi
 
 [Install]
 WantedBy=multi-user.target
-
-
-sudo systemctl enable jivelite
-sudo systemctl start jivelite
-sudo systemctl status jivelite
