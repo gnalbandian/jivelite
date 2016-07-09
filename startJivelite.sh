@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 ## Change these if you changed your install path
-INSTALL_DIR=`pwd`
+INSTALL_DIR=/home/pi/jivelite/opt/jivelite
 LIB_DIR=$INSTALL_DIR/lib
 
 ## Start up
