@@ -1,7 +1,7 @@
 [Unit]
 Description=Starts and stops the Jivelite
-Wants=network-online.target
-After=network-online.target
+Wants=squeezelite.service
+After=squeezelite.service
 
 [Service]
 Type=simple
